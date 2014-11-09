@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6250" systemVersion="14B17" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1060" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6250"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="206" id="207"/>
+                <outlet property="dockMenu" destination="243" id="287"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Nocturne" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="230" userLabel="Panel" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="0.0" y="0.0" width="475" height="698"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <view key="contentView" id="231">
+                <rect key="frame" x="0.0" y="-5" width="475" height="698"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" id="0Yp-92-80x">
+                        <rect key="frame" x="85" y="104" width="595" height="285"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" enabled="NO" sendsActionOnEndEditing="YES" state="on" drawsBackground="YES" id="SQJ-vq-Aya">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="GS9-kb-gGs">
+                        <rect key="frame" x="85" y="388" width="595" height="197"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" enabled="NO" sendsActionOnEndEditing="YES" state="on" drawsBackground="YES" id="Jcv-Dk-5lJ">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="309">
+                        <rect key="frame" x="0.0" y="-97" width="86" height="795"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" enabled="NO" sendsActionOnEndEditing="YES" state="on" drawsBackground="YES" id="430">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" red="0.34117648" green="0.35686275000000001" blue="0.38431373000000002" alpha="1" colorSpace="deviceRGB"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="yMA-OU-N1x">
+                        <rect key="frame" x="13" y="546" width="62" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="triggers" id="Qbr-wI-mH7">
+                            <font key="font" metaFont="systemBold" size="10"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button id="208">
+                        <rect key="frame" x="106" y="351" width="107" height="20"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Invert screen" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="417">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="209" name="value" keyPath="values.inverted" id="223"/>
+                        </connections>
+                    </button>
+                    <button id="214">
+                        <rect key="frame" x="106" y="329" width="183" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Use Monochrome Cholors" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="418">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="209" name="value" keyPath="values.monochrome" id="219"/>
+                        </connections>
+                    </button>
+                    <button id="215">
+                        <rect key="frame" x="106" y="141" width="218" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Hide desktop icons &amp; wallpaper" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="419">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="209" name="value" keyPath="values.desktopHidden" id="226"/>
+                        </connections>
+                    </button>
+                    <button id="216">
+                        <rect key="frame" x="106" y="121" width="128" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Disable shadows" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="420">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="209" name="value" keyPath="values.shadowsHidden" id="225"/>
+                        </connections>
+                    </button>
+                    <imageView id="217">
+                        <rect key="frame" x="11" y="610" width="64" height="64"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="421"/>
+                    </imageView>
+                    <colorWell id="218">
+                        <rect key="frame" x="126" y="283" width="35" height="20"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="color" red="0.058130499000000002" green="0.055541898999999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <binding destination="209" name="enabled" keyPath="values.gammaEnabled" id="241"/>
+                            <binding destination="209" name="value" keyPath="values.whiteColor" id="270">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSUnarchiveFromData</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </colorWell>
+                    <button id="237">
+                        <rect key="frame" x="106" y="307" width="181" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Apply Custom Tint Colors" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="422">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="209" name="value" keyPath="values.gammaEnabled" id="240"/>
+                        </connections>
+                    </button>
+                    <colorWell id="252">
+                        <rect key="frame" x="175" y="283" width="35" height="20"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="color" red="0.058130499000000002" green="0.055541898999999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <binding destination="209" name="value" keyPath="values.blackColor" id="273">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSUnarchiveFromData</string>
+                                </dictionary>
+                            </binding>
+                            <binding destination="209" name="enabled" keyPath="values.gammaEnabled" id="274"/>
+                        </connections>
+                    </colorWell>
+                    <button verticalHuggingPriority="750" id="264">
+                        <rect key="frame" x="106" y="538" width="232" height="27"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="bevel" title="Switch to Night" alternateTitle="Switch to Day" bezelStyle="regularSquare" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="423">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="toggleMode:" target="206" id="Rmp-Tb-w2f"/>
+                            <binding destination="206" name="image" keyPath="toggleButtonImage" id="EfK-ND-WzK"/>
+                            <binding destination="206" name="title" keyPath="toggleButtonTitle" previousBinding="EfK-ND-WzK" id="W7S-f3-bQE"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="282">
+                        <rect key="frame" x="125" y="268" width="35" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="White" id="424">
+                            <font key="font" size="9" name=".HelveticaNeueDeskInterface-Regular"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="283">
+                        <rect key="frame" x="175" y="266" width="35" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Black" id="425">
+                            <font key="font" size="9" name=".HelveticaNeueDeskInterface-Regular"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <slider verticalHuggingPriority="750" id="297">
+                        <rect key="frame" x="126" y="205" width="149" height="21"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="1" doubleValue="1" tickMarkPosition="above" sliderType="linear" id="428">
+                            <font key="font" size="12" name="Helvetica"/>
+                        </sliderCell>
+                        <connections>
+                            <binding destination="209" name="enabled" keyPath="values.adjustBrightness" id="306"/>
+                            <binding destination="209" name="value" keyPath="values.brightness" id="307"/>
+                        </connections>
+                    </slider>
+                    <button id="299">
+                        <rect key="frame" x="106" y="230" width="179" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Adjust screen brightness" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="429">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="209" name="value" keyPath="values.adjustBrightness" id="308"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="311">
+                        <rect key="frame" x="32" y="343" width="46" height="26"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="display settings" id="432">
+                            <font key="font" metaFont="systemBold" size="10"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="313">
+                        <rect key="frame" x="108" y="657" width="114" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Nocturne 3" id="433">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="314">
+                        <rect key="frame" x="108" y="643" width="147" height="11"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="©2007-2009 Blacktree" id="434">
+                            <font key="font" metaFont="miniSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button id="447">
+                        <rect key="frame" x="108" y="-95" width="130" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Invert menu bar" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="450">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="206" name="enabled" keyPath="enabled" id="541">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                            <binding destination="209" name="value" keyPath="values.invertMenuAlways" id="452"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="453">
+                        <rect key="frame" x="15" y="70" width="62" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Menu bar" id="454">
+                            <font key="font" metaFont="systemBold" size="10"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button id="455">
+                        <rect key="frame" x="108" y="71" width="202" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Dim when inactive" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="456">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="209" name="value" keyPath="values.dimMenu" id="502"/>
+                        </connections>
+                    </button>
+                    <slider verticalHuggingPriority="750" id="507">
+                        <rect key="frame" x="126" y="46" width="151" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1" tickMarkPosition="above" sliderType="linear" id="508"/>
+                        <connections>
+                            <action selector="save:" target="209" id="544"/>
+                            <binding destination="209" name="enabled" keyPath="values.dimMenu" id="510"/>
+                            <binding destination="209" name="value" keyPath="values.dimMenuOpacity" id="511"/>
+                        </connections>
+                    </slider>
+                    <textField verticalHuggingPriority="750" id="536">
+                        <rect key="frame" x="132" y="20" width="152" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Menu bar options are active in both Night and Day modes." id="537">
+                            <font key="font" metaFont="miniSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="2CS-Cd-Gd7">
+                        <rect key="frame" x="108" y="631" width="147" height="11"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="©2014 Dominik Pich" id="Ez9-88-Wko">
+                            <font key="font" metaFont="miniSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="fIA-hz-OQL">
+                        <rect key="frame" x="130" y="177" width="152" height="23"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="automatic brightness controls in system preferences override this." id="eWD-mJ-WW2">
+                            <font key="font" metaFont="miniSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <levelIndicator verticalHuggingPriority="750" id="371">
+                        <rect key="frame" x="259" y="465" width="196" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <levelIndicatorCell key="cell" alignment="left" doubleValue="800" maxValue="100" levelIndicatorStyle="continuousCapacity" id="440"/>
+                        <connections>
+                            <binding destination="206" name="value" keyPath="lightMonitor.percent" id="1nH-N3-8bi"/>
+                            <binding destination="206" name="hidden" keyPath="useLightSensors" id="395">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </levelIndicator>
+                    <button id="321">
+                        <rect key="frame" x="108" y="508" width="274" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Use light sensors to automatically switch" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="438">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="206" name="enabled" keyPath="canUseSensors" id="415"/>
+                            <binding destination="209" name="value" keyPath="values.useLightSensors" id="390"/>
+                        </connections>
+                    </button>
+                    <imageView id="375">
+                        <rect key="frame" x="110" y="486" width="16" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Moon" id="441"/>
+                    </imageView>
+                    <imageView id="377">
+                        <rect key="frame" x="111" y="444" width="16" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Sun" id="442"/>
+                    </imageView>
+                    <slider verticalHuggingPriority="750" id="320">
+                        <rect key="frame" x="257" y="481" width="200" height="25"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="100" doubleValue="25" tickMarkPosition="below" numberOfTickMarks="2" sliderType="linear" id="437">
+                            <font key="font" size="12" name="Helvetica"/>
+                        </sliderCell>
+                        <connections>
+                            <binding destination="209" name="value" keyPath="values.lowerLightValue" id="337"/>
+                            <binding destination="209" name="enabled" keyPath="values.useLightSensors" id="391"/>
+                        </connections>
+                    </slider>
+                    <slider verticalHuggingPriority="750" id="319">
+                        <rect key="frame" x="257" y="438" width="200" height="26"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <sliderCell key="cell" continuous="YES" alignment="left" maxValue="100" doubleValue="75" tickMarkPosition="above" numberOfTickMarks="2" sliderType="linear" id="436">
+                            <font key="font" size="12" name="Helvetica"/>
+                        </sliderCell>
+                        <connections>
+                            <binding destination="209" name="value" keyPath="values.upperLightValue" id="338"/>
+                            <binding destination="209" name="enabled" keyPath="values.useLightSensors" id="392"/>
+                        </connections>
+                    </slider>
+                    <textField verticalHuggingPriority="750" id="ubB-r6-AOb">
+                        <rect key="frame" x="131" y="488" width="120" height="12"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="threshold for night mode" id="zoN-Fn-LAY">
+                            <font key="font" metaFont="miniSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="wPd-EQ-mEe">
+                        <rect key="frame" x="133" y="446" width="120" height="12"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="threshold for day mode" id="WRg-31-QFP">
+                            <font key="font" metaFont="miniSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="LLm-pH-jtz">
+                        <rect key="frame" x="131" y="467" width="120" height="12"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="current light level" id="VXh-Bg-8u0">
+                            <font key="font" metaFont="miniSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" id="rbk-Tj-jdc">
+                        <rect key="frame" x="349" y="544" width="93" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Change Hotkey" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" inset="2" id="O1f-aG-DFJ">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="miniSystem"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="changeHotkey:" target="206" id="8hY-Hc-8AR"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" id="316">
+                        <rect key="frame" x="223" y="285" width="142" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Reset Colors to Red/Black" bezelStyle="rounded" alignment="center" controlSize="mini" borderStyle="border" inset="2" id="435">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="miniSystem"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="resetTint:" target="206" id="kSM-4V-jU3"/>
+                            <binding destination="209" name="enabled" keyPath="values.gammaEnabled" id="318"/>
+                        </connections>
+                    </button>
+                    <button id="qK7-Dn-OAw">
+                        <rect key="frame" x="111" y="406" width="173" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Start Nocturne on Login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="sJV-8W-i3N">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="KEu-9j-wxJ" name="value" keyPath="appStartsAtLogin" id="YlL-tI-sdr"/>
+                        </connections>
+                    </button>
+                    <button id="288">
+                        <rect key="frame" x="214" y="-131" width="111" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="Invert hue" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="426">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <binding destination="209" name="value" keyPath="values.hueCorrect" id="291"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="295">
+                        <rect key="frame" x="236" y="-156" width="152" height="23"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Experimental. Turn off LCD font smoothing if text appears blurry" id="427">
+                            <font key="font" metaFont="miniSystem"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="CCF-kJ-Chc">
+                        <rect key="frame" x="108" y="601" width="291" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="pcF-SF-wGd">
+                            <rect key="frame" x="1" y="1" width="223" height="133"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <textView editable="NO" drawsBackground="NO" importsGraphics="NO" findStyle="panel" allowsUndo="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" linkDetection="YES" dataDetection="YES" dashSubstitution="YES" smartInsertDelete="YES" id="JzS-hK-9wl">
+                                    <rect key="frame" x="0.0" y="0.0" width="223" height="133"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    <size key="minSize" width="291" height="17"/>
+                                    <size key="maxSize" width="463" height="10000000"/>
+                                    <attributedString key="textStorage">
+                                        <fragment content="https://github.com/Daij-Djan/nocturne/">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="minSize" width="291" height="17"/>
+                                    <size key="maxSize" width="463" height="10000000"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="qzs-xp-yRG">
+                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="kJj-8O-zZr">
+                            <rect key="frame" x="224" y="1" width="15" height="133"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="67.5" y="160"/>
+        </window>
+        <menu title="MainMenu" systemMenu="main" id="29" userLabel="MainMenu">
+            <items>
+                <menuItem title="Nocturne" id="56">
+                    <menu key="submenu" title="Nocturne" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="About Nocturne" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="196">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Preferences…" keyEquivalent="," id="129">
+                                <connections>
+                                    <action selector="showPreferences:" target="206" id="284"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="143">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Services" id="131">
+                                <menu key="submenu" title="Services" systemMenu="services" id="130"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="144">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Hide Nocturne" keyEquivalent="h" id="134">
+                                <connections>
+                                    <action selector="hide:" target="-2" id="152"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="145">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-2" id="146"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="150">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-2" id="153"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="149">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Quit Nocturne" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-2" id="139"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <userDefaultsController representsSharedInstance="YES" id="209" userLabel="Shared Defaults"/>
+        <menu title="Menu" id="243" userLabel="statusMenu">
+            <items>
+                <menuItem title="Toggle Nocturne (KEY)" id="244">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="toggleMode:" target="206" id="kI6-sa-FnO"/>
+                        <binding destination="206" name="image" keyPath="toggleButtonImage" id="DSd-1W-DJa"/>
+                        <binding destination="206" name="title" keyPath="toggleButtonTitle" previousBinding="DSd-1W-DJa" id="YHv-de-Dlu"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="249">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Preferences..." id="246">
+                    <connections>
+                        <action selector="showPreferences:" target="206" id="285"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="250">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Quit Nocturne" id="251">
+                    <connections>
+                        <action selector="terminate:" target="-2" id="256"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="-70" y="-147.5"/>
+        </menu>
+        <customObject id="206" userLabel="QSNocturneController" customClass="QSNocturneController">
+            <connections>
+                <outlet property="prefsWindow" destination="230" id="232"/>
+                <outlet property="statusMenu" destination="243" id="255"/>
+            </connections>
+        </customObject>
+        <customObject id="KEu-9j-wxJ" customClass="DDOpenAtLoginController"/>
+    </objects>
+    <resources>
+        <image name="Moon" width="16" height="16"/>
+        <image name="NSApplicationIcon" width="128" height="128"/>
+        <image name="Sun" width="16" height="16"/>
+    </resources>
+</document>

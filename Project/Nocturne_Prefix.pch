@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Nocturne' target in the 'Nocturne' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F0F1D620BF41DDC0053F387 /* MoonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0F1D5E0BF41DDC0053F387 /* MoonPressed.png */; };
+		7F0F1D630BF41DDC0053F387 /* Moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0F1D5F0BF41DDC0053F387 /* Moon.png */; };
+		7F0F1D640BF41DDC0053F387 /* Sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0F1D600BF41DDC0053F387 /* Sun.png */; };
+		7F0F1D650BF41DDC0053F387 /* SunPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0F1D610BF41DDC0053F387 /* SunPressed.png */; };
+		7F0FB4EC0BF7650A007329FE /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0FB4EB0BF7650A007329FE /* IOKit.framework */; };
+		7F4587840BF6492B003BA26C /* QSCIFilterWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4587830BF6492B003BA26C /* QSCIFilterWindow.m */; };
+		7F87C58F106EFFF000962DC4 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F87C58E106EFFF000962DC4 /* Carbon.framework */; };
+		7F87C6B7106F435F00962DC4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F87C6B5106F435F00962DC4 /* MainMenu.xib */; };
+		7F93F0D00BF161FF00745665 /* QSNocturneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F93F0CE0BF161FF00745665 /* QSNocturneController.m */; };
+		7F93F59C0BF1807100745665 /* Nocturne.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7F93F59B0BF1807100745665 /* Nocturne.icns */; };
+		7FB9B76A0BFB632100113B17 /* NocturneMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FB9B7680BFB632100113B17 /* NocturneMenu.png */; };
+		7FB9B76B0BFB632100113B17 /* NocturneMenuPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FB9B7690BFB632100113B17 /* NocturneMenuPressed.png */; };
+		7FDB707A0BF95FE200E82B16 /* QSLMUMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDB70790BF95FE200E82B16 /* QSLMUMonitor.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B43984A2183195ED00678536 /* libPTHotkey-OSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4398497183195ED00678536 /* libPTHotkey-OSX.a */; };
+		B43984A3183195ED00678536 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = B4398498183195ED00678536 /* License.txt */; };
+		B43984A4183195ED00678536 /* PTKeyCodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = B439849D183195ED00678536 /* PTKeyCodes.plist */; };
+		B43984A5183195ED00678536 /* PTKeyComboPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = B43984A1183195ED00678536 /* PTKeyComboPanel.xib */; };
+		B439850C183220B600678536 /* SRCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = B43984E4183220B600678536 /* SRCommon.m */; };
+		B439850D183220B600678536 /* SRKeyCodeTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = B43984E6183220B600678536 /* SRKeyCodeTransformer.m */; };
+		B439850E183220B600678536 /* SRRecorderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B43984E8183220B600678536 /* SRRecorderCell.m */; };
+		B439850F183220B600678536 /* SRRecorderControl.m in Sources */ = {isa = PBXBuildFile; fileRef = B43984EA183220B600678536 /* SRRecorderControl.m */; };
+		B4398510183220B600678536 /* SRValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = B43984EC183220B600678536 /* SRValidator.m */; };
+		B439851F1832212600678536 /* DDOpenAtLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = B439851E1832212600678536 /* DDOpenAtLoginController.m */; };
+		B476A952182C2E7700B8E339 /* NSWindow+Sticky.m in Sources */ = {isa = PBXBuildFile; fileRef = B476A951182C2E7700B8E339 /* NSWindow+Sticky.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Nocturne_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nocturne_Prefix.pch; sourceTree = "<group>"; };
+		7F0F1D5E0BF41DDC0053F387 /* MoonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MoonPressed.png; sourceTree = "<group>"; };
+		7F0F1D5F0BF41DDC0053F387 /* Moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Moon.png; sourceTree = "<group>"; };
+		7F0F1D600BF41DDC0053F387 /* Sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sun.png; sourceTree = "<group>"; };
+		7F0F1D610BF41DDC0053F387 /* SunPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SunPressed.png; sourceTree = "<group>"; };
+		7F0FB4EB0BF7650A007329FE /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		7F4587820BF6492B003BA26C /* QSCIFilterWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = QSCIFilterWindow.h; sourceTree = "<group>"; };
+		7F4587830BF6492B003BA26C /* QSCIFilterWindow.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = QSCIFilterWindow.m; sourceTree = "<group>"; };
+		7F87C58E106EFFF000962DC4 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		7F87C6B6106F435F00962DC4 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7F93F0CE0BF161FF00745665 /* QSNocturneController.m */ = {isa = PBXFileReference; fileEncoding = 30; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = QSNocturneController.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		7F93F0CF0BF161FF00745665 /* QSNocturneController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = QSNocturneController.h; sourceTree = "<group>"; };
+		7F93F59B0BF1807100745665 /* Nocturne.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Nocturne.icns; sourceTree = "<group>"; };
+		7FB9B7680BFB632100113B17 /* NocturneMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NocturneMenu.png; sourceTree = "<group>"; };
+		7FB9B7690BFB632100113B17 /* NocturneMenuPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NocturneMenuPressed.png; sourceTree = "<group>"; };
+		7FDB70780BF95FE200E82B16 /* QSLMUMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSLMUMonitor.h; sourceTree = "<group>"; };
+		7FDB70790BF95FE200E82B16 /* QSLMUMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSLMUMonitor.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Nocturne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nocturne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B432221E1A0FF67C0030CF89 /* NSStatusItem+Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSStatusItem+Window.h"; sourceTree = "<group>"; };
+		B4398497183195ED00678536 /* libPTHotkey-OSX.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libPTHotkey-OSX.a"; sourceTree = "<group>"; };
+		B4398498183195ED00678536 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		B4398499183195ED00678536 /* PTHotKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKey.h; sourceTree = "<group>"; };
+		B439849A183195ED00678536 /* PTHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKeyCenter.h; sourceTree = "<group>"; };
+		B439849B183195ED00678536 /* PTHotKeyLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHotKeyLib.h; sourceTree = "<group>"; };
+		B439849C183195ED00678536 /* PTKeyBroadcaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyBroadcaster.h; sourceTree = "<group>"; };
+		B439849D183195ED00678536 /* PTKeyCodes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = PTKeyCodes.plist; sourceTree = "<group>"; };
+		B439849E183195ED00678536 /* PTKeyCodeTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyCodeTranslator.h; sourceTree = "<group>"; };
+		B439849F183195ED00678536 /* PTKeyCombo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyCombo.h; sourceTree = "<group>"; };
+		B43984A0183195ED00678536 /* PTKeyComboPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTKeyComboPanel.h; sourceTree = "<group>"; };
+		B43984A1183195ED00678536 /* PTKeyComboPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PTKeyComboPanel.xib; sourceTree = "<group>"; };
+		B43984E3183220B600678536 /* SRCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRCommon.h; sourceTree = "<group>"; };
+		B43984E4183220B600678536 /* SRCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRCommon.m; sourceTree = "<group>"; };
+		B43984E5183220B600678536 /* SRKeyCodeTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRKeyCodeTransformer.h; sourceTree = "<group>"; };
+		B43984E6183220B600678536 /* SRKeyCodeTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRKeyCodeTransformer.m; sourceTree = "<group>"; };
+		B43984E7183220B600678536 /* SRRecorderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRecorderCell.h; sourceTree = "<group>"; };
+		B43984E8183220B600678536 /* SRRecorderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRecorderCell.m; sourceTree = "<group>"; };
+		B43984E9183220B600678536 /* SRRecorderControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRRecorderControl.h; sourceTree = "<group>"; };
+		B43984EA183220B600678536 /* SRRecorderControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRRecorderControl.m; sourceTree = "<group>"; };
+		B43984EB183220B600678536 /* SRValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRValidator.h; sourceTree = "<group>"; };
+		B43984EC183220B600678536 /* SRValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRValidator.m; sourceTree = "<group>"; };
+		B439851D1832212600678536 /* DDOpenAtLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDOpenAtLoginController.h; sourceTree = "<group>"; };
+		B439851E1832212600678536 /* DDOpenAtLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDOpenAtLoginController.m; sourceTree = "<group>"; };
+		B476A950182C2E7700B8E339 /* NSWindow+Sticky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+Sticky.h"; sourceTree = "<group>"; };
+		B476A951182C2E7700B8E339 /* NSWindow+Sticky.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+Sticky.m"; sourceTree = "<group>"; };
+		C5333A3512ECB6270000B377 /* CGSPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSPrivate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				7F0FB4EC0BF7650A007329FE /* IOKit.framework in Frameworks */,
+				B43984A2183195ED00678536 /* libPTHotkey-OSX.a in Frameworks */,
+				7F87C58F106EFFF000962DC4 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7F93F0CF0BF161FF00745665 /* QSNocturneController.h */,
+				7F93F0CE0BF161FF00745665 /* QSNocturneController.m */,
+				7F4587820BF6492B003BA26C /* QSCIFilterWindow.h */,
+				7F4587830BF6492B003BA26C /* QSCIFilterWindow.m */,
+				7FDB70780BF95FE200E82B16 /* QSLMUMonitor.h */,
+				7FDB70790BF95FE200E82B16 /* QSLMUMonitor.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Nocturne.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Nocturne */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				B476A94F182C2E5E00B8E339 /* Categories */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				B439851B183220DF00678536 /* Helpers */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Nocturne;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				32CA4F630368D1EE00C91783 /* Nocturne_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7F87C6B5106F435F00962DC4 /* MainMenu.xib */,
+				7F0F1D5E0BF41DDC0053F387 /* MoonPressed.png */,
+				7F0F1D5F0BF41DDC0053F387 /* Moon.png */,
+				7F0F1D600BF41DDC0053F387 /* Sun.png */,
+				7F0F1D610BF41DDC0053F387 /* SunPressed.png */,
+				7F93F59B0BF1807100745665 /* Nocturne.icns */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				7FB9B7680BFB632100113B17 /* NocturneMenu.png */,
+				7FB9B7690BFB632100113B17 /* NocturneMenuPressed.png */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F87C58E106EFFF000962DC4 /* Carbon.framework */,
+				7F0FB4EB0BF7650A007329FE /* IOKit.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4398496183195ED00678536 /* PTHotkey */ = {
+			isa = PBXGroup;
+			children = (
+				B4398497183195ED00678536 /* libPTHotkey-OSX.a */,
+				B4398498183195ED00678536 /* License.txt */,
+				B4398499183195ED00678536 /* PTHotKey.h */,
+				B439849A183195ED00678536 /* PTHotKeyCenter.h */,
+				B439849B183195ED00678536 /* PTHotKeyLib.h */,
+				B439849C183195ED00678536 /* PTKeyBroadcaster.h */,
+				B439849D183195ED00678536 /* PTKeyCodes.plist */,
+				B439849E183195ED00678536 /* PTKeyCodeTranslator.h */,
+				B439849F183195ED00678536 /* PTKeyCombo.h */,
+				B43984A0183195ED00678536 /* PTKeyComboPanel.h */,
+				B43984A1183195ED00678536 /* PTKeyComboPanel.xib */,
+			);
+			path = PTHotkey;
+			sourceTree = "<group>";
+		};
+		B43984A6183220B500678536 /* shortcutrecorder */ = {
+			isa = PBXGroup;
+			children = (
+				B43984E2183220B600678536 /* Source */,
+			);
+			path = shortcutrecorder;
+			sourceTree = "<group>";
+		};
+		B43984E2183220B600678536 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B43984E3183220B600678536 /* SRCommon.h */,
+				B43984E4183220B600678536 /* SRCommon.m */,
+				B43984E5183220B600678536 /* SRKeyCodeTransformer.h */,
+				B43984E6183220B600678536 /* SRKeyCodeTransformer.m */,
+				B43984E7183220B600678536 /* SRRecorderCell.h */,
+				B43984E8183220B600678536 /* SRRecorderCell.m */,
+				B43984E9183220B600678536 /* SRRecorderControl.h */,
+				B43984EA183220B600678536 /* SRRecorderControl.m */,
+				B43984EB183220B600678536 /* SRValidator.h */,
+				B43984EC183220B600678536 /* SRValidator.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B439851B183220DF00678536 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C5333A3512ECB6270000B377 /* CGSPrivate.h */,
+				B439851C1832212600678536 /* DDOpenAtLoginController */,
+				B4398496183195ED00678536 /* PTHotkey */,
+				B43984A6183220B500678536 /* shortcutrecorder */,
+				B432221E1A0FF67C0030CF89 /* NSStatusItem+Window.h */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		B439851C1832212600678536 /* DDOpenAtLoginController */ = {
+			isa = PBXGroup;
+			children = (
+				B439851D1832212600678536 /* DDOpenAtLoginController.h */,
+				B439851E1832212600678536 /* DDOpenAtLoginController.m */,
+			);
+			path = DDOpenAtLoginController;
+			sourceTree = "<group>";
+		};
+		B476A94F182C2E5E00B8E339 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B476A950182C2E7700B8E339 /* NSWindow+Sticky.h */,
+				B476A951182C2E7700B8E339 /* NSWindow+Sticky.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Nocturne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Nocturne" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nocturne;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Nocturne;
+			productReference = 8D1107320486CEB800E47090 /* Nocturne.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Nocturne" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Dutch,
+				sv,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Nocturne */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Nocturne */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				7F93F59C0BF1807100745665 /* Nocturne.icns in Resources */,
+				7F0F1D620BF41DDC0053F387 /* MoonPressed.png in Resources */,
+				7F0F1D630BF41DDC0053F387 /* Moon.png in Resources */,
+				B43984A4183195ED00678536 /* PTKeyCodes.plist in Resources */,
+				7F0F1D640BF41DDC0053F387 /* Sun.png in Resources */,
+				7F0F1D650BF41DDC0053F387 /* SunPressed.png in Resources */,
+				B43984A3183195ED00678536 /* License.txt in Resources */,
+				7FB9B76A0BFB632100113B17 /* NocturneMenu.png in Resources */,
+				B43984A5183195ED00678536 /* PTKeyComboPanel.xib in Resources */,
+				7FB9B76B0BFB632100113B17 /* NocturneMenuPressed.png in Resources */,
+				7F87C6B7106F435F00962DC4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				B439850C183220B600678536 /* SRCommon.m in Sources */,
+				7F93F0D00BF161FF00745665 /* QSNocturneController.m in Sources */,
+				B439850F183220B600678536 /* SRRecorderControl.m in Sources */,
+				B439851F1832212600678536 /* DDOpenAtLoginController.m in Sources */,
+				B439850E183220B600678536 /* SRRecorderCell.m in Sources */,
+				7F4587840BF6492B003BA26C /* QSCIFilterWindow.m in Sources */,
+				B476A952182C2E7700B8E339 /* NSWindow+Sticky.m in Sources */,
+				B4398510183220B600678536 /* SRValidator.m in Sources */,
+				B439850D183220B600678536 /* SRKeyCodeTransformer.m in Sources */,
+				7FDB707A0BF95FE200E82B16 /* QSLMUMonitor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7F87C6B5106F435F00962DC4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F87C6B6106F435F00962DC4 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/dominik/Dropbox/Sources/other/blacktree-nocturne-read-only/PTHotkey",
+				);
+				PRODUCT_NAME = Nocturne;
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = /Applications;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/dominik/Dropbox/Sources/other/blacktree-nocturne-read-only/PTHotkey",
+				);
+				PRODUCT_NAME = Nocturne;
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_EMPTY_BODY = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_EMPTY_BODY = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Nocturne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Nocturne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
