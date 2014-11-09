@@ -14,3 +14,6 @@ I added some features:
 - removed warnings & refactored code a lot to make it more readable and more extendable
 
 *Note: this fork is not done of course. Pull requests would be welcome*
+
+####latest binary
+https://github.com/Daij-Djan/nocturne/blob/master/Dist/3.0.zip?raw=true
